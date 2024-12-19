@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d15e572-6cc9-4f6c-90ad-00cead47beef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/config-repo/account-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/account-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/customer-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/customer-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +28,12 @@
         <option value="Enum" />
         <option value="Class" />
         <option value="Record" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/config-repo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -43,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "HTTP Request.All in rest-api_20.executor": "Run",
     "HTTP Request.rest-api_20 | #1.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -57,23 +67,26 @@
     "Spring Boot.DiscoveryServiceApplication.executor": "Run",
     "Spring Boot.GatewayServiceApplication.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "20",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/CoursJava/MicroServices/bank-account-app/config-repo",
+    "last_opened_file_path": "D:/CoursJava/MicroServices/bank-account-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "spring",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CoursJava\MicroServices\bank-account-app\customer-service" />
+      <recent name="D:\CoursJava\MicroServices\bank-account-app\gateway-service" />
+      <recent name="D:\CoursJava\MicroServices\bank-account-app\account-service" />
       <recent name="D:\CoursJava\MicroServices\bank-account-app\config-repo" />
       <recent name="D:\CoursJava\MicroServices\bank-account-app\gateway-service\src\main\resources" />
     </key>
@@ -87,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerServiceApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="All in rest-api_20" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_20.http">
       <method v="2" />
     </configuration>
@@ -131,7 +144,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="HTTP Request.All in rest-api_20" />
       <item itemvalue="HTTP Request.rest-api_20 | #1" />
       <item itemvalue="Spring Boot.AccountServiceApplication" />
@@ -142,6 +170,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="HTTP Request.All in rest-api_20" />
         <item itemvalue="HTTP Request.rest-api_20 | #1" />
       </list>
@@ -165,7 +194,18 @@
       <workItem from="1711818456042" duration="787000" />
       <workItem from="1711819269742" duration="8281000" />
       <workItem from="1711885851186" duration="13289000" />
-      <workItem from="1711975860498" duration="20248000" />
+      <workItem from="1711975860498" duration="25011000" />
+      <workItem from="1712152565797" duration="7505000" />
+      <workItem from="1712162166644" duration="13236000" />
+      <workItem from="1712194594709" duration="1800000" />
+      <workItem from="1712234336996" duration="20000" />
+      <workItem from="1712249953706" duration="193000" />
+      <workItem from="1712250172341" duration="596000" />
+      <workItem from="1712261130301" duration="334000" />
+      <workItem from="1713945847463" duration="72000" />
+      <workItem from="1713957288831" duration="8000" />
+      <workItem from="1714037805536" duration="611000" />
+      <workItem from="1714389402401" duration="708000" />
     </task>
     <servers />
   </component>
